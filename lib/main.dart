@@ -6,7 +6,7 @@ import 'package:sgin_up/firebase_options.dart';
 import 'view/auth/sgin-up.dart';
 
 void main() async{
-
+   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
